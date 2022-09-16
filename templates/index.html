@@ -8,7 +8,7 @@
             {% for p in projects %}
             <div class="col-sm-3">
                 <div class="card">
-                    <div class="card-header">{{ p.banner.url }}</div>
+                    <div class="card-header"><img src="{{ p.banner.url }}" alt="{{p.title}}" class="card-img"></div>
                     <div class="card-body">
                         <p>{{ p.about | slice:100 }}</p>
                     </div>
